@@ -13,7 +13,7 @@ AFRAME.registerComoponent("coins", {
         }
     },
     createCoins: function(id, position){
-        const treasureEntity = document.querySelector("#treasureCoins")
+        var terrainEl = document.querySelector("#terrain")
         var coinEl = document.createElement("a-entity")
 
         coinEl.setAttribute("id", id)
@@ -22,6 +22,6 @@ AFRAME.registerComoponent("coins", {
         coinEl.setAttribute("geometry", {primitive: "circle", radius: 1})
         coinEl.setAttribute("animation", {property: "rotation", to: "0 360 0", loop: "true", dur: 1000})
 
-        treasureEntity.appendChild(coinEl)
+        terrainEl.appendChild(coinEl)
     }
 })
