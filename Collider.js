@@ -4,7 +4,7 @@ AFRAME.registerComponent("fish", {
             const id = `hurdle${i}`;
     
             const posX = (Math.random() * 100 + (-50))
-            const posY = (Math.random() * 5 + 5)
+            const posY = (Math.random() * 1)
             const posZ = (Math.random() * 60 + (-40))
     
             var position = { x: posX, y: posY, z: posZ };
@@ -19,7 +19,7 @@ AFRAME.registerComponent("fish", {
         fishEl.setAttribute("id", id)
         fishEl.setAttribute("position", position)
         fishEl.setAttribute("gltf-model", "./assets/fish/scene.gltf")
-        fishEl.setAttribute("scale", { x: 0.5, y: 0.5, z: 0.5 })
+        fishEl.setAttribute("scale", { x: 0.005, y: 0.005, z: 0.005 })
 
         terrainEl.appendChild(fishEl)
     },
