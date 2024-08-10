@@ -19,7 +19,7 @@ AFRAME.registerComponent("fish", {
         fishEl.setAttribute("id", id)
         fishEl.setAttribute("position", position)
         fishEl.setAttribute("gltf-model", "./assets/fish/scene.gltf")
-        fishEl.setAttribute("scale", { x: 500, y: 500, z: 500 })
+        fishEl.setAttribute("scale", { x: 0.5, y: 0.5, z: 0.5 })
 
         terrainEl.appendChild(fishEl)
     },
