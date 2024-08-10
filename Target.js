@@ -4,7 +4,7 @@ AFRAME.registerComoponent("coins", {
             const id = `coin${i}`
 
             const posX = (Math.random() * 100 + (-50))
-            const posY = (Math.random() * 5 + 5)
+            const posY = (Math.random() * 1)
             const posZ = (Math.random() * 60 + (-40))
 
             const position = { x: posX, y: posY, z: posZ }
