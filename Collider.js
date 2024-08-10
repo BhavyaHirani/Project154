@@ -13,7 +13,7 @@ AFRAME.registerComponent("fish", {
       }
     },
     floatingFish: (id, position) => {
-        const treasureEntity = document.querySelector("#hurdleFish")
+        var terrainEl = document.querySelector("#terrain")
         var fishEl = document.createElement("a-entity")
 
         fishEl.setAttribute("id", id)
@@ -21,7 +21,7 @@ AFRAME.registerComponent("fish", {
         fishEl.setAttribute("gltf-model", "./assets/fish/scene.gltf")
         fishEl.setAttribute("scale", { x: 500, y: 500, z: 500 })
 
-        treasureEntity.appendChild(fishEl)
+        terrainEl.appendChild(fishEl)
     },
   });
   
