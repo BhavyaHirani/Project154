@@ -18,8 +18,8 @@ AFRAME.registerComoponent("coins", {
 
         coinEl.setAttribute("id", id)
         coinEl.setAttribute("position", position)
-        coinEl.setAttribute("gltf-model", "./assets/coin/scene.gltf")
-        coinEl.setAttribute("scale", { x: 500, y: 500, z: 500 })
+        coinEl.setAttribute("material", "color", "#ff9100")
+        coinEl.setAttribute("geometry", {primitive: "circle", radius: 1})
         coinEl.setAttribute("animation", {property: "rotation", to: "0 360 0", loop: "true", dur: 1000})
 
         treasureEntity.appendChild(coinEl)
